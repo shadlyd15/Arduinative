@@ -1,0 +1,15 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.cpu=Processor
+
+##############################################################
+
+##############################################################
+
+arduinative.name=Arduinative
+
+arduinative.upload.protocol=arduino
+arduinative.upload.tool=native_launcher
+
+arduinative.build.board=NATIVE
+arduinative.build.core=arduino
