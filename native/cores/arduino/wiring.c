@@ -20,6 +20,7 @@
   Boston, MA  02111-1307  USA
 */
 
+#include <time.h>
 #include "wiring_private.h"
 
 // the prescaler is set so that timer0 ticks every 64 clock cycles, and the
@@ -41,15 +42,16 @@ static unsigned char timer0_fract = 0;
 
 
 unsigned long millis(){
-
+  return (unsigned long)(clock() / (CLOCKS_PER_SEC / 1000)); 
 }
 
 unsigned long micros(){
-
+  return (unsigned long)(clock() / (CLOCKS_PER_SEC / 100000)); 
 }
 
 void delay(unsigned long ms){
-
+  unsigned long start = millis();
+  while(millis() - start < ms);
 }
 
 void delayMicroseconds(unsigned int us){

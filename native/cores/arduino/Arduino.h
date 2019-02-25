@@ -28,16 +28,9 @@
 
 #define LED_BUILTIN 1
 
-#ifdef PROGMEM
-#undef PROGMEM
+
 #define PROGMEM
-#endif
-
-#ifdef PSTR
-#undef PSTR
-#define PSTR  (   s )    ((const char *)(s))
-#endif
-
+#define PSTR(s)    ((const char *)(s))
 #define PGM_P const char *
 
 #define strlen_P  strlen
@@ -143,7 +136,7 @@ typedef uint8_t byte;
 void init(void);
 void initVariant(void);
 
-int atexit(void (*func)()) __attribute__((weak));
+// int atexit(void (*func)()) __attribute__((weak));
 
 void pinMode(uint8_t, uint8_t);
 void digitalWrite(uint8_t, uint8_t);
