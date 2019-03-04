@@ -4,8 +4,6 @@ menu.cpu=Processor
 
 ##############################################################
 
-##############################################################
-
 arduinative.name=Arduinative
 
 arduinative.upload.protocol=arduino
