@@ -27,6 +27,8 @@
 #include <inttypes.h>
 
 #include "Stream.h"
+#undef min
+#undef max
 #include "BufferedAsyncSerial.h"
 
 // Define config for serial_ptr->begin(baud, config);

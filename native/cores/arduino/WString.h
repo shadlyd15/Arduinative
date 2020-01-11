@@ -24,7 +24,9 @@
 #ifdef __cplusplus
 
 #include <stdlib.h>
-#include <string.h>
+// #include <string.h>
+#undef min
+#undef max
 #include <string>
 #include <ctype.h>
 using namespace std;
