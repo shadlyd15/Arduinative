@@ -1,6 +1,6 @@
 
 ## Arduinative : A native Arduino core to use your PC as an Arduino Board
-An Arduino core to add PC Environment Support in Arduino IDE. This core enables you to build and run Arduino sketches in Native Environment from Arduino IDE. This core was built to compile and run unit tests for arduino in PC environment. 
+An Arduino core to add PC Environment Support in Arduino IDE. This core enables you to build and run Arduino sketches in Native Environment from Arduino IDE. All the Arduino hardware specific codes are replaced with Linux syscall. This core was built to compile and run unit tests for arduino in Linux environment. 
 
 ## Features
 
