@@ -1,12 +1,12 @@
 
 ## Arduinative : A native Arduino core to use your PC as an Arduino Board
-An Arduino core to add PC Environment Support in Arduino IDE. This core enables you to build and run Arduino sketches in Native Environment from Arduino IDE. All the Arduino hardware specific codes are replaced with Linux syscall. This core was built to compile and run unit tests for arduino in Linux environment. 
+An Arduino core to add PC Environment Support in Arduino IDE. This core enables you to build and run Arduino sketches in Native Environment from Arduino IDE. This core was built to compile and run unit tests for arduino in Linux environment. 
 
 ## Features
 
 - [x] Compile & Run Arduino Sketches in PC
 - [x] Supports millis()
-- [x] Supports TinyGSM library
+- [x] Supports TinyGSM library over USB-FTDI
 - [x] Use FTDI as Arduino Serial Interface
 - [ ] Implement LibMPSSE-I2C to use FTDI as I2C device
 - [ ] Use flow control to use DTR/RTS as GPIO
